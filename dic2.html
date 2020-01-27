@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link href="ss1.css" rel="stylesheet"/>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body style="background-color:black">
+    <div>
+        <div class="header">
+            <h2>DICTIONARY</h2>
+        </div>
+
+        <div class="row" style="width:90%;align-content:center;margin-left:10%;margin-right:10%">
+            <div class="leftcolumn">
+                <div class="card" style="width:100%">
+                    <h2><u style="text-decoration-color:red">About Dictionary</u></h2>
+                    <h5> Published, Oct 31, 2019.</h5>
+
+
+                    <ul>
+                        <li><p>A Dictionary is a generic class of C# that is used to represent the collection of (key, value) pairs.</p></li>
+                        <li><p>Dictionary class is present in <cite>System.Collections.Generic </cite>namespace</p></li>
+                        <li><p>When creating a Dictionary<TKey,TValue> , we need to specify the type for key and values.</p></li>
+                        <li><p>Keys in the dictionary must be unique and cannot be null.</p></li>
+                        <li><p>Dictionary provides fast lookups for values using keys.</p></li>
+                        <li><p>Dictionary has three properties- Count, Key and Values.</p></li>
+                    </ul>
+
+                </div>
+                <div class="card">
+                    <h2><u style="text-decoration-color:red">Need of Dictionary</u></h2>
+
+
+                    <ul>
+                        <li><p>It is faster than HashTable.</p></li>
+                        <li><p>It will generate error if we try to use a key that is not exist in the collection.</p></li>
+                        <li><p>It is a generic type so we can use any type of data.</p></li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h2><u style="text-decoration-color:red">Add Elements to Dictionary</u></h2>
+                    <p>When creating a Dictionary<TKey,TValue> , we need to specify the type for key and values.</p>
+                    <p>
+                        The moment we create key it asks for type of key.
+                        Since Dictionary is generic so it can be any datatype.
+                    </p>
+                    <p><i><b>For Example:</b></i></p>
+                    <br />
+                    <div><img src="TKey.jpg" /></div><br />
+                    <p>The following coding snippet adds items to the dictionary</p>
+                    <p><i><b>For Example:</b></i></p>
+                    <p><img src="add.jpg" /></p><br />
+                    <p>
+                        We can also limit the size of the dictinary. The following code snippet creates
+                        a dictionary where the key type is int and value type is string and total number of items it can hold is 3.
+                    </p><br />
+                    <p><i><b>For Example:</b></i></p>
+                    <img src="add2.jpg" />
+                </div>
+
+                <div class="card">
+                    <h2><u style="text-decoration-color:red">Retrieve Elements from Dictionary</u></h2>
+
+                    <p>
+                        The Dictionary is a Collection. We can use the foreach loop to go through all the items
+                        and read them using the key and value properties.
+                    </p>
+
+                    <p><i><b>For Example:</b></i></p>
+                    <img src="add3.jpg" style="width:100%" />
+                </div>
+                <div class="card">
+                    <h2><u style="text-decoration-color:red">Get Number of elements in Dictionary</u></h2>
+
+                    <p>The Count property gets the number of key/value pairs in Dictionary.</p>
+
+                    <p>The following Code snippet displays the number of items in Dictionary.</p>
+                    <p><i><b>For Example:</b></i></p>
+                    <img src="add4.jpg" />
+                    <br />
+                    <p>To Count the number of key/value pairs in Dictionary with user defined criteria, we will use Overloaded Count() function.</p>
+                    <p><i><b>For Example:</b></i></p>
+                    <img src="add8.jpg" style="width:100%" />
+                </div>
+                <div class="card">
+                    <h2><u style="text-decoration-color:red">Retrieve all Keys</u></h2>
+
+                    <p>The keys property gets a collection containing the keys in the Dictionary.</p>
+                    <p><i><b>For Example:</b></i></p>
+                    <img src="add5.jpg" style="width:100%" />
+                </div>
+                <div class="card">
+                    <h2><u style="text-decoration-color:red">Finding a Element in a Dictionary</u></h2>
+
+                    <p>Searching a Element by using the key. If the Element is present it will return the value.</p>
+                    <p><i><b>For Example:</b></i></p>
+                    <img src="add7.jpg" /><br />
+                    <p>Incase, If the given key doesn't present in the Dictionary it will through an Exception. So, this exception is solved by TryGetValue().</p>
+                    <p>In TryGetValue() function we will pass two parameters. One is In Parameter and other is out Parameter.</p>
+                    <p>The In Parameter is the key we want to search. The out parameter is the value associated with the key.</p>
+                    <p>The return type is Boolean. If the key is found, It will return True and the Value is passed through out parameter or else it will return false.</p>
+                    <p><i><b>For Example:</b></i></p>
+                    <img src="add10.jpg" style="width:100%" /><br />
+                </div>
+                <div class="card">
+                    <h2><u style="text-decoration-color:red">Remove Elements from Dictionary</u></h2>
+
+                    <p>The Remove method removes an item with the specified key from the Collection.</p>
+                    <p><i><b>For Example:</b></i></p>
+                    <img src="add6.jpg" />
+                </div>
+                <div class="card">
+                    <h2><u style="text-decoration-color:red">Converting List to Dictionary</u></h2>
+
+                    <p>
+                        The List is converted to Dictionary by using the ToDictionary extension.
+                        Here,the ToDictionary extension is used from System.Linq to set keys and values with a lambda.
+                        ToDictionary converts a collection into a Dictionary. It works on IEnumerable collections such as arrays and Lists.
+                    <p><i><b>For Example:</b></i></p>
+                    <img src="add9.jpg" style="width:100%" />
+                    </p>
+
+                </div>
+
+            </div>
+            <!--<div class="rightcolumn">
+            <div class="card">
+                <h2>Need of Dictionary</h2>
+                <ul>
+                    <li><p>It is faster than HashTable.</p></li>
+                    <li><p>It will generate error if we try to use a key that is not exist in the collection.</p></li>
+                    <li><p>It is a generic type so we can use any type of data.</p></li>
+                </ul>
+
+            </div>
+            <div class="card">
+                <h3>Posts about Dictionary</h3>
+                <img src="img.png" style="width:100%"/>
+                <div class="fakeimg">Image</div>
+            </div>
+            <div class="card">
+                <h3>Follow Me</h3>
+                <p>asian_arcs.com</p>
+                <p>+91-9445774250</p>
+            </div>
+        </div>-->
+        </div>
+        <form action="dic3.html" method="post">
+            <br />
+            <div style="width:70%;align-content:center;margin-left:23%">
+                <input type="text" id="comments" placeholder="Enter your Mail ID" style="font-family:sans-serif;font-size:0.9em;width:50%; text-align:center;"></input>
+                <br />
+                <br />
+                <textarea name="comments" id="comments" placeholder="Please Leave your comments here.." style="font-family:sans-serif;font-size:0.9em;width:50%; text-align:center;"></textarea>
+                <br />
+
+            </div>
+            <div style="width:70%;align-content:center;margin-left:35%;margin-right:25%">
+                <button style="height:30px;width:100px" type="submit" value="Submit"><b>SUBMIT</b></button>
+            </div>
+
+
+        </form>
+        <div class="footer">
+            <p style="text-align:center"> Copyrights &copy; 2019 Dictionary study All Rights Reserved</p>
+        </div>
+    </div>
+    
+
+</body>
+</html>
